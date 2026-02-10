@@ -14,7 +14,7 @@ function Student() {
     e.preventDefault()
 
     try {
-      await axios.post('http://localhost:8000/api/addstudent', {
+      await axios.post('https://school-management-system111.onrender.com/api/addstudent', {
         name,
         studentclass,
         roll,

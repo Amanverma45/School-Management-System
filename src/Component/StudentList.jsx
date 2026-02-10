@@ -17,7 +17,7 @@ function StudentList() {
 
   const fetchStudents = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/getstudent')
+      const res = await axios.get('https://school-management-system111.onrender.com/api/getstudent')
       setStudents(res.data)
     } catch (err) {
       console.log(err)
@@ -37,7 +37,7 @@ function StudentList() {
   const updateStd = async () => {
     try {
       await axios.put(
-        `http://localhost:8000/api/updateStd/${editId}`,
+        `https://school-management-system111.onrender.com/api/updateStd/${editId}`,
         formData
       )
       setEditId(null)
@@ -50,7 +50,7 @@ function StudentList() {
 
   const deleteStd = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/api/deleteStd/${id}`)
+      await axios.delete(`https://school-management-system111.onrender.com/api/deleteStd/${id}`)
       fetchStudents()
     } catch (err) {
       console.log(err)
