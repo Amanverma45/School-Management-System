@@ -1,0 +1,169 @@
+.student-list {
+  padding: 40px;
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #f3f6f4, #e7ece9);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* heading */
+.student-list h2 {
+  color: #2f3e34;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* table wrapper */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* table cells */
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #2f3e34;
+}
+
+/* header */
+th {
+  background: rgba(220, 228, 223, 0.9);
+  font-weight: 600;
+}
+
+/* rows */
+tr {
+  transition: background 0.2s ease;
+}
+
+tr:nth-child(even) {
+  background: rgba(242, 245, 243, 0.8);
+}
+
+tr:hover {
+  background: rgba(230, 236, 232, 0.9);
+}
+
+/* action buttons */
+button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* update button */
+button:first-child {
+  background: #b68f8f;
+  color: #2f3e34;
+  margin-right: 8px;
+}
+
+button:first-child:hover {
+  background: #c9d6cf;
+}
+
+/* delete button */
+/* button:last-child {
+  background: #e7c1c1;
+  color: #3e2f2f;
+} */
+
+button:last-child:hover {
+  background: #dbaaaa;
+}
+
+/* edit box */
+/* Dark background overlay */
+.edit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Edit box */
+.edit-box {
+  background: #ffffff;
+  width: 360px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.edit-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Labels */
+.edit-box label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  color: #444;
+}
+
+/* Inputs */
+.edit-box input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.edit-box input:focus {
+  border-color: #4caf50;
+}
+
+/* Buttons */
+.edit-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #d5564d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #43a047;
+}
+
+.cancel-btn:hover {
+  background: #e53935;
+}
