@@ -10,7 +10,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         <h2 className="text-lg font-semibold text-gray-800">
-          City Public School
+          <img src="../public/school.png" alt="School" className="h-20 w-auto object-contain" />
         </h2>
 
         <div className="flex items-center gap-6 text-sm">
