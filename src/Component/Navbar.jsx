@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <div className="bg-slate-50 border-b border-slate-300">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-2 md:px-6 h-16 flex items-center justify-between">
 
         <h2 className="text-lg font-semibold text-gray-800">
           <img
