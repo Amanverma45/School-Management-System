@@ -27,7 +27,7 @@ function Navbar() {
               </Link>
 
               <Link to="/students" className="text-gray-700 hover:text-gray-900">
-                Add-Students
+                Add
               </Link>
 
               <Link to="/student-list" className="text-gray-700 hover:text-gray-900">
